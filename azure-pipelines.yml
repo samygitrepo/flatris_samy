@@ -20,7 +20,7 @@ steps:
   displayName: 'Installing NPM Package manager'
 
 - script: |
-    npm run build --notRestrict
+    npm run build --silent
   displayName: 'Building Node.js app using NPM cmd'
 
 - script: echo Hey, Your Node.js applcation has been built successfully...
