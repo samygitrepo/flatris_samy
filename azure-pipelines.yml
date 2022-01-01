@@ -13,14 +13,14 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '8.x'
-  displayName: 'Install Node.js'
+  displayName: 'Installing Node.js'
 
 - script: |
     npm install
   displayName: 'Installing NPM Package manager'
 
 - script: |
-    npm run build
+    npm run build --notRestrict
   displayName: 'Building Node.js app using NPM cmd'
 
 - script: echo Hey, Your Node.js applcation has been built successfully...
